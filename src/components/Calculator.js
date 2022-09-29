@@ -64,7 +64,7 @@ const Calculator = () => {
             setScreenValue('Error');
         }
         setScreenValue(answer + '');
-        setScreenStack(screenStack + screenValue + ' = ' + answer);
+        setScreenStack(screenStack + ' ' + screenValue + ' = ' + answer);
         setOperator('');
         setOperand('')
       } catch (ex) {
@@ -78,7 +78,7 @@ const Calculator = () => {
       if (operator === '') {
         setScreenStack(screenValue + ' ' + value);
       } else {
-        setScreenStack(screenStack + screenValue + ' ' + value);
+        setScreenStack(screenStack + ' ' + screenValue + ' ' + value);
       }
     }
   };
