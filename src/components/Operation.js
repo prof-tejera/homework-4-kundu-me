@@ -1,4 +1,4 @@
-const Operation = ({ value }) => {
+const Operation = ({ value, ...props }) => {
   /** TODO: What happens when a user clicks an Operation, what do we want to pass to our parent? */
   return (
     <div
@@ -8,7 +8,7 @@ const Operation = ({ value }) => {
         width: 60,
       }}
     >
-      {value}
+      <button {...props} value = {value}> {value} </button>
     </div>
   );
 };

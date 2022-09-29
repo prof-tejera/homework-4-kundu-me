@@ -1,4 +1,4 @@
-const Screen = ({ value }) => {
+const Screen = ({ value, stack }) => {
   return (
     <div
       style={{
@@ -10,6 +10,16 @@ const Screen = ({ value }) => {
       }}
     >
       {value}
+      <div
+        style={{
+          width: 300,
+          height: 70,
+          textAlign: "right",
+          marginTop: 30,
+        }}
+      >
+        {stack}
+      </div>
     </div>
   );
 };

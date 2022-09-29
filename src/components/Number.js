@@ -8,7 +8,7 @@ const Number = ({ value, onClick }) => {
         width: 60,
       }}
     >
-      {value}
+      <button onClick = {onClick} value = {value}> {value} </button>
     </div>
   );
 };
