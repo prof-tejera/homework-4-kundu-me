@@ -4,11 +4,12 @@ const Number = ({ value, onClick }) => {
     <div
       style={{
         padding: 10,
+        marginTop: 10,
         border: "1px solid black",
         width: 60,
       }}
     >
-      {value}
+      <button onClick = {onClick} value = {value}> {value} </button>
     </div>
   );
 };
